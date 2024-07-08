@@ -4,7 +4,7 @@ function swap(arr, idx1, idx2) {
     arr[idx2] = temp;
 }
 
-function selectionSort(arr) {
+function insertionSort(arr) {
     for (let i = 1; i < arr.length; i++) {
         let currentVal = arr[i];
         for (var j = i - 1; j >= 0 && arr[j] > currentVal; j--) {
@@ -17,7 +17,7 @@ function selectionSort(arr) {
 
 
 function main() {
-    console.log(selectionSort([10, 12, 9, 8, 7, 1, 5, 2, 13]));
+    console.log(insertionSort([10, 12, 9, 8, 7, 1, 5, 2, 13]));
 }
 
 main();
